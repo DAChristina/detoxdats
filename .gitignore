@@ -19,3 +19,4 @@ src/*.gcno
 inst/doc
 vignettes/*.html
 inst/web
+data-raw/
