@@ -21,7 +21,7 @@
 ^pkgdown$
 
 ^revdep$
-^data_raw$
+^data-raw$
 
 ^vignettes/.*\.Rmd$
 ^vignettes/.*\.Rmarkdown$

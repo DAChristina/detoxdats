@@ -3,7 +3,7 @@ library(tidyverse)
 
 set.seed(123)
 nID <- 100
-mock_data <- data.frame(
+messy_data <- data.frame(
   id = paste0("ID_", 1:nID),
   dates = sample(
     c(
@@ -82,7 +82,8 @@ mock_data <- data.frame(
 ) %>%
   glimpse()
 
-write.csv(mock_data, "tests/testthat/messy_data.csv",
+usethis::use_data(messy_data, overwrite = TRUE)
+write.csv(messy_data, "data/messy_data.csv",
           row.names = FALSE)
-openxlsx::write.xlsx(mock_data, "tests/testthat/messy_data.xlsx",
+openxlsx::write.xlsx(messy_data, "data/messy_data.xlsx",
                      rowNames = FALSE)
