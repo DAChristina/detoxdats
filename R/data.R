@@ -6,7 +6,7 @@
 #' \describe{
 #'   \item{id}{Unique ID}
 #'   \item{area}{Area A–D}
-#'   \item{vaccination_status}{Vaccinated / unvaccinated}
+#'   \item{vaccination_status}{vaccinated / unvaccinated}
 #'   \item{age}{Age in years}
 #'   \item{gender}{M / F}
 #'   \item{econ}{Socio-economic status: low / middle / high}
