@@ -44,6 +44,24 @@ report_duplicate <- function(df, column_id, other_iden = NULL){
   return(out)
 }
 
+
+#' Title
+#'
+#' @param df
+#'
+#' @returns
+#' @export
+#'
+#' @examples
+report_uniqval <- function(df){
+  tibble::tibble(
+    column_name = names(df),
+    unique_count = map_int(df, ~ length(unique(.x))),
+    unique_value = map_chr(df, ~ paste(unique(.x), collapse = ", "))
+  )
+}
+
+
 #' Title
 #'
 #' @param df
